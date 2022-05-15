@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="" method="post" id="form1" class="formStyle">
+    <fieldset>
+      <legend>Contact</legend>
+      <label for="name">Name
+        <input type="text" name="name" id="name" required placeholder="Name">
+      </label>
+
+      <label for="email">Email
+        <input type="email" name="email" id="email" required autocomplete="email" placeholder="Email">
+      </label>
+
+      <textarea name="feedback" id="feedback" cols="40" rows="10" placeholder="Write your feedback here"></textarea>
+    
+      <input type="submit" value="SUBMIT" form="form1" id="submit-btn">
+    </fieldset>
+  </form>
+
+  <div id="info"></div>
+  <script src="main.js"></script>
+</body>
+</html>

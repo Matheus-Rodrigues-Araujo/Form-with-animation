@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-rendering: geometricPrecision;
+  font-size: 30px;
+  font-weight: 500;
+  font-stretch: condensed;
+  display: flex;
+  /* justify-content: center; */
+  flex-flow: column wrap;
+  align-items: center;
+  height: 100vh;
+  /* width: 100%; */
+  background-image: linear-gradient(100deg, rgb(0, 70, 128), rgb(155, 23, 45));
+  background-repeat: no-repeat;
+  color: white;
+  scroll-behavior: none;
+  animation: changeFormColor 7s infinite;
+}
+
+
+@keyframes changeFormColor {
+  0% {
+    background-image: linear-gradient(
+     100deg,
+    rgb(0, 70, 128),
+     rgb(155, 23, 45));
+  }
+
+  
+  50% {
+    background-image: linear-gradient(
+      100deg,
+      rgb(14, 97, 175),
+      rgb(178, 27, 45)
+    );
+  }
+
+  100% {
+    background-image: linear-gradient(
+      100deg,
+      rgb(0, 70, 128),
+      rgb(155, 23, 45)
+    );
+  }
+}
+
+form {
+  margin: 10px auto;
+}
+form fieldset {
+  padding: 1em;
+  gap: 20px;
+  height: 450px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+form fieldset legend {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+input[type='text'] {
+  margin-left: 17px;
+}
+
+input[type='submit'] {
+  background-image: linear-gradient(200deg, rgb(210, 3, 3), rgb(6, 81, 255));
+  padding: 10px 80px;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  width: 290px;
+  border: none;
+  border-radius: 0.3em;
+  /* box-shadow: inset 0 0 0 10px red; */
+}
+
+input[type='submit']:hover {
+  transform: rotate(-4deg);
+  -webkit-transform: rotateZ(-4deg);
+  -ms-transform: rotateZ(-4deg);
+  /* background-image: linear-gradient(360deg, rgb(210, 3, 3), rgb(6, 81, 255)); */
+  background-image: linear-gradient(200deg, rgb(3, 210, 6), rgb(6, 81, 255));
+  text-shadow: -5px -0px rgb(18, 17, 17);
+  color: antiquewhite;
+  transition: ease-in 300ms;
+  box-shadow: inset 0 0 0 5px cyan;
+}
+
+textarea {
+  width: 280px;
+  outline: none;
+  color: black;
+}
